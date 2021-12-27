@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#ff0"
-    android:padding="10dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
-        android:layout_marginTop="15dp"
-        android:padding="10dp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:text="Cập nhật công việc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Cập nhật công việc"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:layout_marginTop="15dp"
-        android:hint="Nhập lại tên công việc"
         android:id="@+id/edittextEditTenCV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Nhập lại tên công việc" />
 
     <LinearLayout
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
 
         <Button
-            android:layout_marginRight="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/buttonXacNhanEdit"
-            android:text="Xác nhận"
-            android:layout_weight="1" />
-
-        <Button
-            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Xác nhận" />
+
+        <Button
             android:id="@+id/buttonHuyEdit"
-            android:text="Hủy"
-            android:layout_weight="1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Hủy" />
 
 
     </LinearLayout>
